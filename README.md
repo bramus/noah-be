@@ -1,5 +1,6 @@
 # Noah.be Website
 
+[![Netlify Status](https://api.netlify.com/api/v1/badges/d4da30a4-0265-43f1-87d4-c31c912f6da9/deploy-status)](https://app.netlify.com/sites/noah-be/deploys)
 
 ## Developing
 
