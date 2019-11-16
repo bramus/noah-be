@@ -1,0 +1,18 @@
+[build]
+  publish = "build"
+  command = "yarn build"
+
+[[redirects]]
+  from = "https://noah-be.netlify.com/*"
+  to = "https://www.noah.be/:splat"
+  status = 301
+  force = true
+
+[[headers]]
+  for = "/*"
+  [headers.values]
+    X-Frame-Options = "DENY"
+    X-XSS-Protection = "1; mode=block"
+    Referrer-Policy = "no-referrer"
+    X-Content-Type-Options = "nosniff"
+    Strict-Transport-Security = "max-age=63072000; includeSubDomains; preload"

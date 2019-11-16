@@ -1,0 +1,44 @@
+{
+  "name": "noah-be",
+  "version": "1.0.0",
+  "description": "The Noah.be Website",
+  "main": "index.js",
+  "scripts": {
+    "preinstall": "mkdir -p ./node_modules && touch ./node_modules/.metadata_never_index",
+    "build": "webpack --progress --mode production --env.MODE=production",
+    "start": "webpack-dev-server --mode development --open --hot --env.MODE=development"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bramus/noah-be.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/bramus/noah-be/issues"
+  },
+  "homepage": "https://github.com/bramus/noah-be#readme",
+  "devDependencies": {
+    "@babel/core": "^7.4.3",
+    "@babel/preset-env": "^7.4.3",
+    "@babel/register": "^7.4.0",
+    "babel-loader": "^8.0.5",
+    "clean-webpack-plugin": "^2.0.1",
+    "copy-webpack-plugin": "^5.0.2",
+    "css-loader": "^2.1.1",
+    "html-loader": "^0.5.5",
+    "html-webpack-plugin": "^3.2.0",
+    "mini-css-extract-plugin": "^0.6.0",
+    "optimize-css-assets-webpack-plugin": "^5.0.1",
+    "pug-html-loader": "^1.1.5",
+    "style-loader": "^0.23.1",
+    "stylus": "^0.54.5",
+    "stylus-loader": "^3.0.2",
+    "webpack": "^4.30.0",
+    "webpack-cli": "^3.3.1",
+    "webpack-dev-server": "^3.3.1"
+  },
+  "dependencies": {
+    "javascript-yellow": "^1.0.4"
+  }
+}

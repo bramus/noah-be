@@ -1,0 +1,31 @@
+doctype html
+html
+	head
+
+		meta(charset='UTF-8')
+		title Noah.be
+
+		meta(name='title', content='Noah.be')
+		meta(name='description', content='Noah.be – Soon …')
+		meta(property='og:type', content='website')
+		meta(property='og:url', content='https://www.noah.be/')
+		meta(property='og:title', content='Noah.be')
+		meta(property='og:description', content='Noah.be – Soon …')
+		meta(property='og:image', content='')
+		meta(property='twitter:card', content='summary_large_image')
+		meta(property='twitter:url', content='https://www.noah.be/')
+		meta(property='twitter:title', content='Noah.be')
+		meta(property='twitter:description', content='Noah.be – Soon …')
+
+		link(rel='stylesheet', type='text/css', href='https://fonts.googleapis.com/css?Open+Sans:200')
+
+		// Global site tag (gtag.js) - Google Analytics
+		script(async='', src='https://www.googletagmanager.com/gtag/js?id=UA-152678638-1')
+		script.
+			window.dataLayer = window.dataLayer || [];
+			function gtag(){dataLayer.push(arguments);}
+			gtag('js', new Date());
+			gtag('config', 'UA-152678638-1');
+
+	body
+		block content
