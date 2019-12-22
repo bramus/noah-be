@@ -1,24 +1,117 @@
+@font-face {
+  font-family: 'Norwester';
+  src: url('/fonts/norwester/norwester.eot'); /* IE9 Compat Modes */
+  src: url('/fonts/norwester/norwester.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('/fonts/norwester/norwester.woff') format('woff'), /* Pretty Modern Browsers */
+       url('/fonts/norwester/norwester.ttf')  format('truetype'), /* Safari, Android, iOS */
+       url('/fonts/norwester/norwester.svg#norwesterregular') format('svg'); /* Legacy iOS */
+}
+
+@font-face {
+  font-family: 'Didot';
+  src: url('/fonts/didot/Didot.eot'); /* IE9 Compat Modes */
+  src: url('/fonts/didot/Didot.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+  	   url('/fonts/didot/Didot.woff2') format('woff2'), /* Very Modern Browsers */
+       url('/fonts/didot/Didot.woff') format('woff'), /* Pretty Modern Browsers */
+       url('/fonts/didot/Didot.ttf')  format('truetype'); /* Safari, Android, iOS */
+}
+
+@font-face {
+  font-family: 'Didot Bold';
+  src: url('/fonts/didot/DidotBold.eot'); /* IE9 Compat Modes */
+  src: url('/fonts/didot/DidotBold.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+  	   url('/fonts/didot/DidotBold.woff2') format('woff2'), /* Very Modern Browsers */
+       url('/fonts/didot/DidotBold.woff') format('woff'), /* Pretty Modern Browsers */
+       url('/fonts/didot/DidotBold.ttf')  format('truetype'); /* Safari, Android, iOS */
+}
+
 *
 	margin 0
 	padding 0
+	box-sizing border-box
 
 body,
 html
 	font-size 16px
-	width 100%
-	height 100%
 
 body
-	display flex
-	flex-direction column
-	align-items center
-	justify-content center
-	text-align center
 	background #fff
-	color $blue
-	font-family "Open Sans", sans-serif
 	font-weight 200
+	padding 1em
+	font-family "Didot"
+	letter-spacing 0.15em
 
-h1
-	font-weight 600
-	line-height 1.4
+ul
+	list-style none
+
+main
+	background #fff
+	width 100%
+	text-align center
+	padding 5em 0 0 0
+
+	> *
+		margin-bottom 1em
+
+.title, dt
+	font-family 'Didot Bold'
+	font-weight 700
+
+a, a:visited
+	color blue
+a:hover, a:focus
+	color royalblue
+
+
+a.fauxlink
+	color #333
+	text-decoration none
+
+	&:hover, &:focus
+		color royalblue
+		text-decoration underline
+
+p.title
+	margin-bottom 0.3em
+
+#panda
+	width 16em
+	max-width 100%
+	height auto
+	margin 3em 0
+
+h1#name
+	font-family Norwester
+	text-transform uppercase
+	font-size 5em
+	font-weight 400
+	line-height 1
+	margin-bottom 0
+	letter-spacing 0
+
+#meta
+	margin 0 0 3em
+	list-style none
+
+	li
+		display inline-block
+		padding 0.5em
+		position relative
+	li + li
+		&:before
+			content ''
+			display block
+			position absolute
+			left 0
+			background #333
+			bottom 20%
+			top 20%
+			width 1px
+
+dl
+	margin 0 0 3em
+	dt 
+		display inline
+		padding-right 0.5em
+	dd
+		display inline

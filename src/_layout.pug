@@ -6,18 +6,18 @@ html
 		title Noah.be
 
 		meta(name='title', content='Noah.be')
-		meta(name='description', content='Noah.be – Soon …')
+		meta(name='description', content='Noah Van Damme, zoon van Bram Van Damme &amp; Elke Van Ruyskensvelde')
 		meta(property='og:type', content='website')
 		meta(property='og:url', content='https://www.noah.be/')
 		meta(property='og:title', content='Noah.be')
-		meta(property='og:description', content='Noah.be – Soon …')
+		meta(property='og:description', content='Noah Van Damme, zoon van Bram Van Damme &amp; Elke Van Ruyskensvelde')
 		meta(property='og:image', content='')
 		meta(property='twitter:card', content='summary_large_image')
 		meta(property='twitter:url', content='https://www.noah.be/')
 		meta(property='twitter:title', content='Noah.be')
-		meta(property='twitter:description', content='Noah.be – Soon …')
+		meta(property='twitter:description', content='Noah Van Damme, zoon van Bram Van Damme &amp; Elke Van Ruyskensvelde')
 
-		link(rel='stylesheet', type='text/css', href='https://fonts.googleapis.com/css?Open+Sans:200')
+		meta(name="viewport", content="width=device-width, initial-scale=1")
 
 		// Global site tag (gtag.js) - Google Analytics
 		script(async='', src='https://www.googletagmanager.com/gtag/js?id=UA-152678638-1')
@@ -28,4 +28,16 @@ html
 			gtag('config', 'UA-152678638-1');
 
 	body
-		block content
+		main
+
+			h1#name Noah
+			p#date 15 januari 2020
+
+			img#panda(src="/img/noah-panda.png" alt="" title="" width="599" height="599" role="presentation")
+
+			ul#meta
+				li 10u56
+				li 3500gr
+				li 50cm
+		
+			block content
