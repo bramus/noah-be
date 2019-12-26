@@ -1,7 +1,7 @@
 extends _layout
 
 block content
-	dl
+	dl.sidebyside
 		div
 			dt zoon van
 			dd <a href="https:///www.bram.us/" class="fauxlink">Bram</a> &amp; <a href="https:///www.elliesblog.be/" class="fauxlink">Elke</a>
@@ -11,9 +11,12 @@ block content
 		div
 			dt petekind van
 			dd Tine &amp; Ian
-	
-	p.title Cadeautip
-	ul#cadeautip
-		li 
-			a(href="https://www.degeleflamingo.com/apps/registry/list/CF10TJ" title="") geboortelijst
-		li BE03 7490 1819 7484
+
+	dl.fullwidth
+		div
+			dt geboortelijst
+			dd 
+				a(href="https://www.degeleflamingo.com/apps/registry/list/CF10TJ" title="") De Gele Flamingo
+		div
+			dt pamperrekening
+			dd BE03 7490 1819 7484
